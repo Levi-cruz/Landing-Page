@@ -26,7 +26,7 @@ CREATE TABLE `usuario` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) DEFAULT NULL,
   `email` varchar(140) NOT NULL,
-  `senha` varchar(20) NOT NULL,
+  `senha` varchar(255) NOT NULL,
   `nivel_acesso` enum('admin','user') NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
